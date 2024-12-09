@@ -1,6 +1,7 @@
 package org.example;
 
 import org.example.Question1.Question1;
+import org.example.Question11.Question11;
 import org.example.Question2.Question2;
 import org.example.Question7and8.Question7;
 import org.example.Question7and8.Question8;
@@ -47,8 +48,9 @@ public class Main {
 //                        break;
 //                    case "10":
 //                        break;
-//                    case "11":
-//                        break;
+                    case "11":
+                        Question11.main(args);
+                        break;
                     default:
                         System.out.println("Error: Enter a number between 1 and 11");
                 }
