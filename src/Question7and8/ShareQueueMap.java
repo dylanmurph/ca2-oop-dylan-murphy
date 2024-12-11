@@ -54,8 +54,8 @@ public class ShareQueueMap {
     }
 
     public void buyCompanyShares(String symbol, int buyQty, double buyPrice) {
-        ShareQueue currentQueue = companyShares.get(symbol); //assigning currentQueue to a ShareQueue of current symbol
         companyShares.putIfAbsent(symbol, new ShareQueue());//if provided key (symbol) doesn't exist, create a new queue using this symbol
+        ShareQueue currentQueue = companyShares.get(symbol); //assigning currentQueue to a ShareQueue of current symbol
         currentQueue.buyShares(symbol, buyQty, buyPrice);//access the queue using provided key (symbol) and add new share into the queue
     }
 
